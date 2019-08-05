@@ -18,31 +18,31 @@
 <script>
 export default {
   name: "Header",
-    data() {
+  data() {
     return {
       user: null
     };
   },
-  methods: {
-    logout() {
-      firebase
-        .auth()
-        .signOut()
-        .then(() => {
-          this.$router.push({ name: "Login" });
-        });
-    }
-  },
-  created() {
-    // let user = firebase.auth().currentUser;
-    firebase.auth().onAuthStateChanged(user => {
-      if (user) {
-        this.user = user;
-      } else {
-        this.user = null;
-      }
-    });
-  }
+  // methods: {
+  //   logout() {
+  //     firebase
+  //       .auth()
+  //       .signOut()
+  //       .then(() => {
+  //         this.$router.push({ name: "Login" });
+  //       });
+  //   }
+  // },
+  // created() {
+  //   // let user = firebase.auth().currentUser;
+  //   firebase.auth().onAuthStateChanged(user => {
+  //     if (user) {
+  //       this.user = user;
+  //     } else {
+  //       this.user = null;
+  //     }
+  //   });
+  // }
 };
 </script>
 

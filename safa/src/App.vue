@@ -6,8 +6,8 @@
   </div>
 </template>
 <script>
-import Header from './components/layout/Header';
-import Footer from './components/layout/Footer';
+import Header from './layout/Header';
+import Footer from './layout/Footer';
 export default {
   name: "App",
   components: {
@@ -29,7 +29,7 @@ html {
   font-size: 16px;
   font-family: 'Red Hat Text', sans-serif;
   overflow: hidden;
-  height: 100vh;
+  height: 100%;
 }
 //
 body {
@@ -37,7 +37,7 @@ body {
 }
 
 #app {
-  height: 100vh;
+  height: 100%;
   display: flex;
   flex-direction: column;
   align-items: stretch;
