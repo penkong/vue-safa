@@ -18,6 +18,31 @@
 <script>
 export default {
   name: "Header",
+    data() {
+    return {
+      user: null
+    };
+  },
+  methods: {
+    logout() {
+      firebase
+        .auth()
+        .signOut()
+        .then(() => {
+          this.$router.push({ name: "Login" });
+        });
+    }
+  },
+  created() {
+    // let user = firebase.auth().currentUser;
+    firebase.auth().onAuthStateChanged(user => {
+      if (user) {
+        this.user = user;
+      } else {
+        this.user = null;
+      }
+    });
+  }
 };
 </script>
 
@@ -38,7 +63,7 @@ export default {
 
   div {
     padding: 0.5rem;
-    margin: 0 2rem;
+    margin: 0 0.5rem;
     margin-left: auto;
     font-size: 1.5rem;
     display: flex;
