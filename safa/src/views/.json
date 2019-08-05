@@ -1,0 +1,92 @@
+{
+  "workbench.iconTheme": "material-icon-theme",
+  "terminal.integrated.shell.windows": "D:\\Program Files\\Git\\bin\\bash.exe",
+  "terminal.integrated.rendererType": "dom",
+  "terminal.integrated.fontSize": 16,
+  "editor.renderWhitespace": "none",
+  "breadcrumbs.enabled": false,
+  "editor.renderControlCharacters": true,
+  "editor.minimap.enabled": false,
+  "window.zoomLevel": 0,
+  "materialTheme.accent": "Remove accents",
+  "workbench.colorCustomizations": {},
+  "javascript.updateImportsOnFileMove.enabled": "never",
+  "editor.multiCursorModifier": "ctrlCmd",
+  "liveServer.settings.donotShowInfoMsg": true,
+  "editor.suggestSelection": "first",
+  "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
+  "[javascript]": {
+    "editor.defaultFormatter": "vscode.typescript-language-features"
+  },
+  "editor.fontSize": 18,
+  "editor.tabSize": 2,
+  "[html]": {
+    "editor.defaultFormatter": "vscode.html-language-features"
+  },
+  "cSpell.userWords": [
+    "Linkdin",
+    "THREADPOOL",
+    "Waypoint",
+    "algo",
+    "blogposts",
+    "darksky",
+    "devserver",
+    "emtr",
+    "gettimestamp",
+    "lendo",
+    "logoutall",
+    "mapbox",
+    "minlength",
+    "minmax",
+    "mixins",
+    "modernizr",
+    "mypath",
+    "noframework",
+    "nums",
+    "porcessenvnodeenv",
+    "selftought",
+    "subdocument",
+    "subdocuments",
+    "thisismycode",
+    "validatesytnc",
+    "waypoints",
+    "webm",
+    "xlink"
+  ],
+  "[css]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[json]": {
+    "editor.defaultFormatter": "HookyQR.beautify"
+  },
+  "[scss]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "css.lint.unknownAtRules": "ignore",
+  "css.lint.unknownVendorSpecificProperties": "warning",
+  "prettier.eslintIntegration": true,
+  "prettier.stylelintIntegration": true,
+  "prettier.tslintIntegration": true,
+  "css.validate": false,
+  "workbench.colorTheme": "Material Theme Palenight",
+  "editor.formatOnSave": true,
+  "[javascript]": {
+    "editor.formatOnSave": false
+  },
+  "eslint.autoFixOnSave": true,
+  "eslint.alwaysShowStatus": true,
+  "emmet.includeLanguages": {
+    "javascript": "javascriptreact"
+  },
+  "files.autoSave": "onFocusChange",
+  "editor.formatOnPaste": true,
+  "prettier.jsxBracketSameLine": true,
+  "python.jediEnabled": false,
+  "editor.formatOnType": false,
+  "typescript.preferences.quoteStyle": "single",
+  "javascript.preferences.quoteStyle": "single",
+  "prettier.singleQuote": true,
+  "prettier.jsxSingleQuote": true,
+  "turboConsoleLog.quote": "'",
+  "typescript.updateImportsOnFileMove.enabled": "always"
+}

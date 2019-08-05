@@ -5,9 +5,9 @@
 </template>
 
 <script>
-  export default {
-    name: "About"
-  }
+export default {
+  name: "About"
+};
 </script>
 
 
@@ -15,7 +15,7 @@
 .about {
   height: 90vh;
   width: 100vw;
-  background: rgb(3, 163, 255);
+  background: #00b7ff;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -30,7 +30,7 @@
     padding: 1rem;
     justify-content: center;
     align-items: center;
-    box-shadow: 0 7px 8px 3px rgba(0,0,0,.15);
+    box-shadow: 0 7px 8px 3px rgba(0, 0, 0, 0.15);
     border-radius: 4px;
   }
 }
