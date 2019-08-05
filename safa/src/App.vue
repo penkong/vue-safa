@@ -30,12 +30,19 @@ html {
   font-family: 'Red Hat Text', sans-serif;
   overflow-x: hidden;
   height: 100%;
+
 }
 //
 body {
   box-sizing: border-box;
 }
 
+a, 
+a:hover, 
+a:active, 
+a:focus { 
+  outline: none; 
+}
 #app {
   height: 100%;
   display: flex;

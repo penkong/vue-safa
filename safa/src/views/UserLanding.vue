@@ -1,13 +1,18 @@
 <template>
     <div>
-        UserLanding
+        <BigCard/>
+        <BigCard/>
+        <BigCard/>
     </div>
 </template>
 
 <script>
+    import BigCard from '../components/BigCard';
     export default {
         name: "UserLanding",
-
+        components: {
+            BigCard
+        }
     }
 </script>
 
