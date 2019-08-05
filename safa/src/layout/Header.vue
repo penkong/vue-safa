@@ -1,17 +1,17 @@
 <template>
   <nav class="header">
-      <router-link  :to="{ name: 'Home'}"
-        class="safa bg-transparent text-blue-900 font-bold hover:text-red-700"
-      >Safa Rayaneh</router-link>
-      <div>
-        
-        <router-link :to="{name: 'Home'}"
-          class="bg-transparent  text-blue-900 font-normal hover:text-red-400"
-        >Home</router-link>
-        <router-link :to="{name: 'About'}"
-          class="bg-transparent text-blue-900 font-normal hover:text-red-400 py-2 px-4"
-        >About</router-link>
-      </div>
+      <router-link :to="{ name: 'Home' }" class="safa">SAFA RAYANEH</router-link>
+      <ul>
+        <li>
+          <router-link :to="{ name: 'Signup' }">Signup</router-link>
+        </li> 
+        <li>
+          <router-link :to="{ name: 'Login' }">Login</router-link>
+        </li> 
+        <li>
+          <router-link :to="{ name: 'About' }">About</router-link>
+        </li> 
+      </ul>
   </nav>
 </template>
 
@@ -54,25 +54,62 @@ export default {
   background: white;
   display: flex;
   flex-direction: row;
+  justify-content: center;
+  align-items: center;
 
   .safa {
-    padding: 0.5rem;
-    margin: 0 2rem;
+    position: absolute;
+    left: 2rem;
     font-size: 2rem;
-  }
+    font-weight: 500;
+    letter-spacing: .2rem;
+    color: rgb(2, 41, 59);
 
-  div {
-    padding: 0.5rem;
-    margin: 0 0.5rem;
-    margin-left: auto;
-    font-size: 1.5rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    a {
-      margin-right: 1rem;
-      text-decoration: none;
+    &:hover {
+      color: rgb(3, 127, 184);
     }
   }
+  ul {
+    display: flex;
+    margin-left: auto;
+    margin-right: 2rem;
+    li {
+      margin: 0 1rem;
+      font-size: 1.2rem;
+      padding: .5rem .8rem;
+      transition: all .2s ease-in;
+      &:hover {
+        color: white;
+        background: rgb(3, 127, 184);
+      }
+    }
+  }
+
+//   .safa {
+//     padding: 0.5rem;
+//     margin: 0 2rem;
+//     letter-spacing: .2rem;
+//     font-size: 2rem;
+//     font-weight: 200;
+//     background: transparent;
+//     color: rgb(3, 3, 29);
+//     &:hover {
+//       color: rgb(20, 187, 76);
+//     }
+//   }
+// //  class="bg-transparent text-blue-900 font-normal hover:text-red-400 py-2 px-4"
+//   div {
+//     padding: 0.5rem;
+//     margin: 0 0.5rem;
+//     margin-left: auto;
+//     font-size: 1.5rem;
+//     display: flex;
+//     justify-content: center;
+//     align-items: center;
+//     a {
+//       margin-right: 1rem;
+//       text-decoration: none;
+//     }
+//   }
 }
 </style>
