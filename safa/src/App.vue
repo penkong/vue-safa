@@ -1,18 +1,43 @@
 <template>
   <div id="app">
-    
+    <Header/>
     <router-view />
+    <Footer/>
   </div>
 </template>
 <script>
-import Header from './components/Header';
+import Header from './components/layout/Header';
+import Footer from './components/layout/Footer';
 export default {
   name: "App",
   components: {
-    Header
+    Header,
+    Footer
   }
 }
 </script>
 <style lang="scss">
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+html {
+  // font-size: 62.5%; //10px
+  font-size: 16px;
+  font-family: 'Red Hat Text', sans-serif;
+}
+//
+body {
+  box-sizing: border-box;
+}
 
+#app {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+}
 </style>
