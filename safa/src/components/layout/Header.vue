@@ -2,8 +2,8 @@
   <nav class="header">
       <p>Safa Rayaneh</p>
       <div>
-        <router-link to="/">Home</router-link>
-        <router-link to="/about">About</router-link>
+        <router-link :to="{name: 'Home'}">Home</router-link>
+        <router-link :to="{name: 'About'}">About</router-link>
       </div>
   </nav>
 </template>

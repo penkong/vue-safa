@@ -10,6 +10,10 @@
   }
 </script>
 
-<style lang="scss" scoped>
 
+<style scoped lang="scss">
+.about {
+  height: 95vh;
+  background: blue;
+}
 </style>

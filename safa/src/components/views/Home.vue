@@ -9,8 +9,15 @@
 
 
 export default {
-  name: "home",
+  name: "Home",
   components: {
   }
 };
 </script>
+
+<style scoped lang="scss">
+.home {
+  height: 95vh;
+  background: blue;
+}
+</style>
