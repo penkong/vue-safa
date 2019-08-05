@@ -1,9 +1,16 @@
 <template>
   <nav class="header">
-      <p>Safa Rayaneh</p>
+      <router-link  :to="{ name: 'Home'}"
+        class="safa bg-transparent text-blue-900 font-bold hover:text-red-700"
+      >Safa Rayaneh</router-link>
       <div>
-        <router-link :to="{name: 'Home'}">Home</router-link>
-        <router-link :to="{name: 'About'}">About</router-link>
+        
+        <router-link :to="{name: 'Home'}"
+          class="bg-transparent  text-blue-900 font-normal hover:text-red-400"
+        >Home</router-link>
+        <router-link :to="{name: 'About'}"
+          class="bg-transparent text-blue-900 font-normal hover:text-red-400 py-2 px-4"
+        >About</router-link>
       </div>
   </nav>
 </template>
@@ -19,12 +26,11 @@ export default {
 .header {
   height: 60px;
   width: 100vw;
-  background: #ededed;
+  background: white;
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
 
-  p {
+  .safa {
     padding: 0.5rem;
     margin: 0 2rem;
     font-size: 2rem;
@@ -33,7 +39,11 @@ export default {
   div {
     padding: 0.5rem;
     margin: 0 2rem;
+    margin-left: auto;
     font-size: 1.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     a {
       margin-right: 1rem;
       text-decoration: none;
