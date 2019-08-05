@@ -26,10 +26,12 @@
 
 <style lang="scss" scoped>
 .card {
-    background: white;
+    background: #00b7ff;
     display: inline-block;
-    min-width: 18.75rem;
-    height: 18.75rem;
+    min-width: 280px;
+    float: left;
+    width: 31%;
+    height: 16rem;
     margin: 0.5rem;
     box-shadow: 0 0 12px 1px rgba(0,0,0,.1);
     border-radius: 4px;

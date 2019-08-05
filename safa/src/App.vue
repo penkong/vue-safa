@@ -28,7 +28,7 @@ html {
   // font-size: 62.5%; //10px
   font-size: 16px;
   font-family: 'Red Hat Text', sans-serif;
-  overflow: hidden;
+  overflow-x: hidden;
   height: 100%;
 }
 //
