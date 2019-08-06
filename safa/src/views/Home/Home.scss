@@ -1,15 +1,17 @@
 .home {
   // padding: 1rem;
-  padding: 1rem 0;
+  padding: 1rem 2rem;
   width: 100vw;
   height: auto;
   background-image: linear-gradient(to right top, #085353, #006274, #00709b, #007ac1, #327ee0);
   background-attachment: fixed;
   background-size: cover;
-  position: relative;
+  margin: 0 auto;
+  text-align: center;
 
   .card-container {
-    max-width: 95%;   
+    max-width: 95%;
+    margin-left: 2rem;    
     text-align: center;
     @include respond(tab-land) {
     margin: 1rem;

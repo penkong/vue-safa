@@ -1,0 +1,63 @@
+.card-log {
+    display: block;
+    min-width: 220px;
+    width: 40%;
+    margin: 7rem auto;
+    padding: 1rem 2rem;
+    border-radius: 4px;
+    // text-align: left;
+    form {
+      font-size: 1.2rem;
+      background: #fcfcfcf5;
+      border-radius: 3px;
+      padding: 2rem 3rem 4rem;
+      margin-bottom: 2rem;
+
+      label {
+        display: block;
+        color: #313131;
+        margin-bottom: 0.75rem;
+      }
+
+      input {
+      //  focus:outline-none focus:shadow-outline"
+        color: #313131;
+        box-shadow: 0 2px 2px 1px rgba(0, 0, 0, 0.05);
+        border: 1px solid #ebebeb;
+        border-radius: 4px;
+        display: block;
+        width: 100%;
+        line-height: 1.25rem;
+        padding: 0.75rem 1rem;
+        transition: all .3s ease;
+        margin-bottom: 2.5rem;
+
+        &:focus {
+          outline: none;
+          border: 1px solid #ebebeb;
+          box-shadow: 0 1px 1px 1px rgba(27, 60, 92, 0.438)
+        }
+      }
+
+      .btn-row {
+        //  class="flex items-center justify-between"
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+      }
+    }
+
+    p {
+      text-align: center;
+      color: #313131;
+      font-size: 1rem;
+    }
+    @include respond(tab-land) {
+    }
+    @include respond(tab-port) {
+      width: 70%;   
+    }
+    @include respond(phone) {
+      width: 80%;
+    }
+  }

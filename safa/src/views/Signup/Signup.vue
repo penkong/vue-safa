@@ -1,40 +1,25 @@
 <template>
   <div class="signup">
-    <div class="card-log w-full max-w-xs">
-      <form class="bg-white shadow-md rounded px-8 pt-6 pb-8 mb-4">
-        <div class="mb-4">
-          <label class="block text-gray-700 text-sm font-bold mb-2" for="username">Email</label>
-          <input
-            class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
-            id="username"
-            type="text"
-            placeholder="Username"
-          />
+    <div class="card-log">
+      <form>
+        <div>
+          <label for="username">Email</label>
+          <input id="username" type="text" placeholder="Username" />
         </div>
-        <div class="mb-4">
-          <label class="block text-gray-700 text-sm font-bold mb-2" for="username">Username</label>
-          <input
-            class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
-            id="username"
-            type="text"
-            placeholder="Username"
-          />
+        <div>
+          <label for="username">Username</label>
+          <input id="username" type="text" placeholder="Username" />
         </div>
-        <div class="mb-6">
-          <label class="block text-gray-700 text-sm font-bold mb-2" for="password">Password</label>
-          <input
-            class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 mb-3 leading-tight focus:outline-none focus:shadow-outline"
-            id="password"
-            type="password"
-            placeholder="*******"
-          />
-          <p v-if="empty" class="text-red-500 text-xs italic">Please choose a password.</p>
+        <div>
+          <label for="password">Password</label>
+          <input id="password" type="password" placeholder="*******" />
+          <!-- <p v-if="empty" class="text-red-500 text-xs italic">Please choose a password.</p> -->
         </div>
-        <div class="flex items-center justify-center">
+        <div>
           <button class="btn btn-text btn--animated" type="button">Sign Up</button>
         </div>
       </form>
-      <p class="text-center text-gray-700 text-xs">&copy;2019 Acme Corp. All rights reserved.</p>
+      <p>&copy;2019 Acme Corp. All rights reserved.</p>
     </div>
   </div>
 </template>
@@ -54,6 +39,16 @@ export default {
 </script>
 
 <style scoped lang="scss">
+@import "../../sass/abstract/mixins";
 @import "Signup";
+@import "../../sass/component/log-card";
 @import "../../sass/component/button";
+.btn {
+  &,
+  &:link,
+  &:visited {
+    display: block;
+    margin: 0 auto;
+  }
+}
 </style>
