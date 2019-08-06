@@ -10,7 +10,7 @@ html {
   font-size: 16; //10px
   font-family: "Red Hat Text", sans-serif;
   overflow-x: hidden;
-  height: 100vw;
+  height: 100vh;
   @include respond(big-desktop) {
     font-size: 90%; // 12/16
   }
@@ -24,7 +24,7 @@ html {
   }
 
   @include respond(phone) {
-    font-size: 55%; //
+    font-size: 60%; //
   }
 }
 //

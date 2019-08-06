@@ -8,20 +8,18 @@
   padding: 1rem 2rem;
   box-shadow: 0 7px 8px 3px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
+  text-align: left;
   @include respond(tab-land) {
     width: 42%;
-    text-align: center;
-    margin: 1rem;
-    margin-right: 2rem;
+
   }
   @include respond(tab-port) {
     width: 45%;
-    margin: 1rem;
-    margin-right: 2rem;
+
   }
   @include respond(phone) {
     display: block;
-    width: 100%;
+    width: 90%;
     margin: 1rem auto;
   }
 }
