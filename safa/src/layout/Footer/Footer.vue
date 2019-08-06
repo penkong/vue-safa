@@ -22,5 +22,6 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+@import "../../sass/abstract/mixins";
 @import "Footer";
 </style>
