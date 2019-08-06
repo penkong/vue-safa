@@ -1,7 +1,5 @@
 <template>
-  <div class="about">
-    <div class="card"></div>
-  </div>
+  <div class="card"></div>
 </template>
 
 <script>
@@ -12,5 +10,6 @@ export default {
 
 
 <style scoped lang="scss">
+@import "../../sass/abstract/mixins";
 @import "BigCard";
 </style>
