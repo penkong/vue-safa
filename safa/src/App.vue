@@ -1,52 +1,23 @@
 <template>
   <div id="app">
-    <Header/>
+    <Header />
     <router-view />
-    <Footer/>
+    <Footer />
   </div>
 </template>
 <script>
-import Header from './layout/Header';
-import Footer from './layout/Footer';
+import Header from "./layout/Header/Header";
+import Footer from "./layout/Footer/Footer";
 export default {
   name: "App",
   components: {
     Header,
     Footer
   }
-}
+};
 </script>
 <style lang="scss">
-*,
-*::after,
-*::before {
-  margin: 0;
-  padding: 0;
-  box-sizing: inherit;
-}
-html {
-  // font-size: 62.5%; //10px
-  font-size: 16px;
-  font-family: 'Red Hat Text', sans-serif;
-  overflow-x: hidden;
-  height: 100%;
-
-}
-//
-body {
-  box-sizing: border-box;
-}
-
-a, 
-a:hover, 
-a:active, 
-a:focus { 
-  outline: none; 
-}
-#app {
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: stretch;
-}
+@import "sass/abstract/variables";
+@import "sass/abstract/mixins";
+@import "sass/base/base";
 </style>

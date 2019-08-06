@@ -1,6 +1,6 @@
 import Vue from "vue";
 import Router from "vue-router";
-import Home from "./views/Home.vue";
+import Home from "./views/Home/Home.vue";
 
 Vue.use(Router);
 
@@ -18,31 +18,31 @@ export default new Router({
       name: "About",
       // this generates a separate chunk (about.[hash].js) for this route
       component: () =>
-        import(/* webpackChunkName: "about" */ "./views/About.vue")
+        import(/* webpackChunkName: "about" */ "./views/About/About.vue")
     },
     {
       path: "/login",
       name: "Login",
       component: () =>
-        import(/* webpackChunkName: "about" */ "./views/Login.vue")
+        import(/* webpackChunkName: "about" */ "./views/Login/Login.vue")
     },
     {
       path: "/signup",
       name: "Signup",
       component: () =>
-        import(/* webpackChunkName: "about" */ "./views/Signup.vue")
+        import(/* webpackChunkName: "about" */ "./views/Signup/Signup.vue")
     },
     {
       path: "/user-land",
       name: "Signup",
       component: () =>
-        import(/* webpackChunkName: "about" */ "./views/UserLanding.vue")
+        import(/* webpackChunkName: "about" */ "./views/UserLanding/UserLanding.vue")
     },
     {
       path: "/contact-us",
       name: "ContactUs",
       component: () =>
-        import(/* webpackChunkName: "about" */ "./views/ContactUs.vue")
+        import(/* webpackChunkName: "about" */ "./views/ContactUs/ContactUs.vue")
     }
   ]
 });
