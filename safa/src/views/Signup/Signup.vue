@@ -31,10 +31,7 @@
           <p v-if="empty" class="text-red-500 text-xs italic">Please choose a password.</p>
         </div>
         <div class="flex items-center justify-center">
-          <button
-            class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline"
-            type="button"
-          >Sign Up</button>
+          <button class="btn btn-text btn--animated" type="button">Sign Up</button>
         </div>
       </form>
       <p class="text-center text-gray-700 text-xs">&copy;2019 Acme Corp. All rights reserved.</p>
@@ -58,4 +55,5 @@ export default {
 
 <style scoped lang="scss">
 @import "Signup";
+@import "../../sass/component/button";
 </style>

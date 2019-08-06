@@ -1,15 +1,18 @@
-.btn {
+
+  .btn {
+  background: rgb(10, 80, 138);
+  color: white;
   &,
   &:link,
   &:visited {
     text-transform: uppercase;
     text-decoration: none;
-    padding: 1.5rem 3rem;
+    padding: .5rem 1.2rem;
     display: inline-block;
     border-radius: 4rem;
     transition: all 0.2s;
     position: relative;
-    font-size: 1.5rem;
+    font-size: 1.1rem;
 
     // change for the button
     border: none;
@@ -19,6 +22,7 @@
   &:hover {
     transform: translateY(-0.09rem) scale(1.02);
     box-shadow: 0 0.5rem 0.2rem $color-shadow-btn-hover;
+    background: rgb(6, 110, 196);
 
     &:after {
       transform: scaleX(1.4) scaleY(1.5);
@@ -46,9 +50,9 @@
   }
 
   &--green {
-    background-color: $color-primary-dark;
+    background-color: rgb(6, 110, 196);
     color: $color-white;
-    letter-spacing: 0.4rem;
+    // letter-spacing: 0.4rem;
     font-weight: 400;
     box-shadow: 0 0.3rem 0.05rem $color-shadow-btn-white;
 
@@ -80,7 +84,7 @@
 .btn-text {
   &:link,
   &:visited {
-    color: $color-btn--white;
+    color: rgb(11, 196, 171);
     font-size: 2rem;
     font-weight: 500;
     display: inline-block;
@@ -92,8 +96,8 @@
   }
 
   &:hover {
-    background-color: $color-primary;
-    color: $color-btn--white;
+    background-color: rgb(11, 196, 171);
+    color: white;
     box-shadow: 0 0.3rem 0.05rem $color-shadow-btn-white;
     transform: translateY(-0.2rem);
   }
