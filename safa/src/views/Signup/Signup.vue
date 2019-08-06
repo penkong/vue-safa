@@ -16,7 +16,7 @@
           <!-- <p v-if="empty" class="text-red-500 text-xs italic">Please choose a password.</p> -->
         </div>
         <div>
-          <button class="btn btn-text btn--animated" type="button">Sign Up</button>
+          <button class="btn btn-text" type="button">Sign Up</button>
         </div>
       </form>
       <p>&copy;2019 Acme Corp. All rights reserved.</p>

@@ -1,9 +1,8 @@
 <template>
   <div class="about">
-    <BigCard />
-    <BigCard />
-    <BigCard />
-    <BigCard />
+    <div v-for="item in 5" :key="item.id" class="free-fix">
+      <BigCard>{{ item }}</BigCard>
+    </div>
   </div>
 </template>
 

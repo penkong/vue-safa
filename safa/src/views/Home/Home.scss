@@ -1,15 +1,17 @@
 .home {
   // padding: 1rem;
   padding: 1rem 2rem;
+  
   width: 100vw;
   height: auto;
-  background-image: linear-gradient(to right top, #085353, #006274, #00709b, #007ac1, #327ee0);
+  background-image: linear-gradient(to right, #008585, #007d84, #007481, #006c7e, #006379, #006379, #006379, #006379, #006c7e, #007481, #007d84, #008585);
   background-attachment: fixed;
   background-size: cover;
   margin: 0 auto;
   text-align: center;
 
   .card-container {
+    margin-top: 5rem;
     max-width: 95%;
     margin-left: 2rem;    
     text-align: center;

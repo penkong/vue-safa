@@ -8,4 +8,10 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  .free-fix:first-child {
+    margin-top: 6rem;
+  }
+  .free-fix:last-child {
+    margin-bottom: 3rem;
+  }
 }
