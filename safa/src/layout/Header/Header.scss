@@ -1,5 +1,12 @@
+// Variables
+$color: black;
+$body-color: #ecf0f1;
+$color1: #566473;
+$color2: #16a085;
+$color3: #435a6b;
+
 .header {
-  height: 60px;
+  height: 5rem;
   width: 100vw;
   background-color: #efefef;
   display: flex;
@@ -8,17 +15,78 @@
   align-items: center;
   
   .safa {
-    position: absolute;
+    @include respond(sm-phone) {
+      font-size: 1.4rem;
+      letter-spacing: 0.1rem;
+    }
+    position: relative;
     left: 2rem;
-    font-size: 2rem;
+    font-size: 1.6rem;
     font-weight: 600;
     letter-spacing: .2rem;
     color: rgb(2, 41, 59);
     transition: all 0.3s ease-in;
+    cursor: pointer;
+    outline: none;
+    // margin: 1em 0.8em;
+    padding: 0.6rem 1.2rem;
+    // @include respond(phone) {
+    //   &.type1 {
+    //     &.type1::after,
+    //     &.type1::before{
+    //       display: block;
+    //       border: 1.3px solid;
+    //       border-radius: 3px;
+    //     }
+    //   }
+    // }
+    &.type1 {
+      // Effect one
+      &.type1::after,
+      &.type1::before{
+        content: '';
+        display: block;
+        position: absolute;
+        width: 10%;
+        height: 10%;
+        border: 1.3px solid $color2;
+        transition: all 0.8s ease;
+        border-radius: 3px;
+      }
+  }
+
+    &.type1::after {
+      bottom: 0;
+      right: 0;
+      border-top-color: transparent;
+      border-left-color: transparent;
+      border-bottom-color: $color1;
+      border-right-color: $color1;
+
+    }
+
+    &.type1::before {
+      top: 0;
+      left: 0;
+      border-bottom-color: transparent;
+      border-right-color: transparent;
+      border-top-color: $color1;
+      border-left-color: $color1;
+
+    }
+
+    &.type1:hover:after,
+    &.type1:hover:before {
+      height: 100%;
+      width: 100%;
+
+    }
 
     &:hover {
-      color: rgb(2, 110, 160);
+      color: white;
+      background-color: rgb(2, 110, 160);
     }
+    
   }
 
   ul {
@@ -41,15 +109,15 @@
       margin-right: 1rem;
       
       li {
-      margin: 0 0.4rem;
-      font-size: 1.2rem;
-      padding: .2rem .3rem;
-      transition: all .2s ease-in;
-      &:hover {
-        color: white;
-        background: rgb(3, 127, 184);
+        margin: 0 0.4rem;
+        font-size: 1.2rem;
+        padding: .2rem .3rem;
+        transition: all .2s ease-in;
+        &:hover {
+          color: white;
+          background: rgb(3, 127, 184);
+        }
       }
-    }
     }
   }
 }

@@ -16,9 +16,13 @@
     @include respond(tab-land) {
     margin: 1rem;
     margin-right: 2rem;
-    }
-    @include respond(tab-port) {
-      display: block;
+    min-height: 100vh;
+    height: auto;
+  }
+  @include respond(tab-port) {
+    display: block;
+    min-height: 100vh;
+    height: auto;
     }
     @include respond(phone) {
       display: flex;

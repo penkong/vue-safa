@@ -1,6 +1,6 @@
 <template>
   <nav class="header">
-    <router-link :to="{ name: 'Home' }" class="safa safa--animated">SAFA RAYANEH</router-link>
+    <router-link :to="{ name: 'Home' }" class="safa type1">SAFA RAYANEH</router-link>
     <ul>
       <li>
         <router-link :to="{ name: 'Signup' }">Signup</router-link>

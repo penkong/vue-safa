@@ -3,8 +3,8 @@
     <div class="card-log">
       <form>
         <div>
-          <label for="username">Email</label>
-          <input id="username" type="text" placeholder="Username" />
+          <label for="email">Email</label>
+          <input id="email" type="text" placeholder="email" />
         </div>
         <div>
           <label for="username">Username</label>

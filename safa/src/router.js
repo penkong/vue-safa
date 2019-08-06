@@ -33,8 +33,8 @@ export default new Router({
         import(/* webpackChunkName: "about" */ "./views/Signup/Signup.vue")
     },
     {
-      path: "/user-land",
-      name: "Signup",
+      path: "/userland",
+      name: "UserLanding",
       component: () =>
         import(/* webpackChunkName: "about" */ "./views/UserLanding/UserLanding.vue")
     },
