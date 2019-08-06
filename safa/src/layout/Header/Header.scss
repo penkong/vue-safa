@@ -6,7 +6,12 @@
   flex-direction: row;
   justify-content: center;
   align-items: center;
-
+  @include respond(tab-land) {
+  }
+  @include respond(tab-port) {
+  }
+  @include respond(phone) {
+  }
   .safa {
     position: absolute;
     left: 2rem;

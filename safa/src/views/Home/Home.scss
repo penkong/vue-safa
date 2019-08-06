@@ -1,12 +1,27 @@
 .home {
-  padding: 1rem;
+  // padding: 1rem;
+  padding: 1rem 0;
   width: 100vw;
   height: 95vh;
   background-color: #3fa4cc;
   background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25' viewBox='0 0 100 60'%3E%3Cg %3E%3Crect fill='%233fa4cc' width='11' height='11'/%3E%3Crect fill='%233ca6cd' x='10' width='11' height='11'/%3E%3Crect fill='%2338a8cd' y='10' width='11' height='11'/%3E%3Crect fill='%2335aacd' x='20' width='11' height='11'/%3E%3Crect fill='%2331abce' x='10' y='10' width='11' height='11'/%3E%3Crect fill='%232eadce' y='20' width='11' height='11'/%3E%3Crect fill='%232bafce' x='30' width='11' height='11'/%3E%3Crect fill='%2328b1ce' x='20' y='10' width='11' height='11'/%3E%3Crect fill='%2325b3ce' x='10' y='20' width='11' height='11'/%3E%3Crect fill='%2322b4ce' y='30' width='11' height='11'/%3E%3Crect fill='%2320b6cd' x='40' width='11' height='11'/%3E%3Crect fill='%231fb8cd' x='30' y='10' width='11' height='11'/%3E%3Crect fill='%231ebacc' x='20' y='20' width='11' height='11'/%3E%3Crect fill='%231ebbcc' x='10' y='30' width='11' height='11'/%3E%3Crect fill='%231ebdcb' y='40' width='11' height='11'/%3E%3Crect fill='%2320bfca' x='50' width='11' height='11'/%3E%3Crect fill='%2322c0c9' x='40' y='10' width='11' height='11'/%3E%3Crect fill='%2324c2c8' x='30' y='20' width='11' height='11'/%3E%3Crect fill='%2327c3c7' x='20' y='30' width='11' height='11'/%3E%3Crect fill='%232bc5c6' x='10' y='40' width='11' height='11'/%3E%3Crect fill='%232ec7c5' y='50' width='11' height='11'/%3E%3Crect fill='%2332c8c4' x='60' width='11' height='11'/%3E%3Crect fill='%2336cac2' x='50' y='10' width='11' height='11'/%3E%3Crect fill='%233bcbc1' x='40' y='20' width='11' height='11'/%3E%3Crect fill='%233fcdbf' x='30' y='30' width='11' height='11'/%3E%3Crect fill='%2344cebe' x='20' y='40' width='11' height='11'/%3E%3Crect fill='%2348d0bc' x='10' y='50' width='11' height='11'/%3E%3Crect fill='%234dd1ba' x='70' width='11' height='11'/%3E%3Crect fill='%2351d2b9' x='60' y='10' width='11' height='11'/%3E%3Crect fill='%2356d4b7' x='50' y='20' width='11' height='11'/%3E%3Crect fill='%235bd5b5' x='40' y='30' width='11' height='11'/%3E%3Crect fill='%2360d6b3' x='30' y='40' width='11' height='11'/%3E%3Crect fill='%2364d8b1' x='20' y='50' width='11' height='11'/%3E%3Crect fill='%2369d9af' x='80' width='11' height='11'/%3E%3Crect fill='%236edaae' x='70' y='10' width='11' height='11'/%3E%3Crect fill='%2373dbac' x='60' y='20' width='11' height='11'/%3E%3Crect fill='%2378dcaa' x='50' y='30' width='11' height='11'/%3E%3Crect fill='%237ddea8' x='40' y='40' width='11' height='11'/%3E%3Crect fill='%2382dfa6' x='30' y='50' width='11' height='11'/%3E%3Crect fill='%2387e0a4' x='90' width='11' height='11'/%3E%3Crect fill='%238be1a2' x='80' y='10' width='11' height='11'/%3E%3Crect fill='%2390e2a0' x='70' y='20' width='11' height='11'/%3E%3Crect fill='%2395e39e' x='60' y='30' width='11' height='11'/%3E%3Crect fill='%239ae49c' x='50' y='40' width='11' height='11'/%3E%3Crect fill='%239fe59b' x='40' y='50' width='11' height='11'/%3E%3Crect fill='%23a4e699' x='90' y='10' width='11' height='11'/%3E%3Crect fill='%23aae697' x='80' y='20' width='11' height='11'/%3E%3Crect fill='%23afe796' x='70' y='30' width='11' height='11'/%3E%3Crect fill='%23b4e894' x='60' y='40' width='11' height='11'/%3E%3Crect fill='%23b9e993' x='50' y='50' width='11' height='11'/%3E%3Crect fill='%23bee991' x='90' y='20' width='11' height='11'/%3E%3Crect fill='%23c3ea90' x='80' y='30' width='11' height='11'/%3E%3Crect fill='%23c8eb8f' x='70' y='40' width='11' height='11'/%3E%3Crect fill='%23ceeb8d' x='60' y='50' width='11' height='11'/%3E%3Crect fill='%23d3ec8c' x='90' y='30' width='11' height='11'/%3E%3Crect fill='%23d8ec8b' x='80' y='40' width='11' height='11'/%3E%3Crect fill='%23dded8b' x='70' y='50' width='11' height='11'/%3E%3Crect fill='%23e2ed8a' x='90' y='40' width='11' height='11'/%3E%3Crect fill='%23e8ee89' x='80' y='50' width='11' height='11'/%3E%3Crect fill='%23edee89' x='90' y='50' width='11' height='11'/%3E%3C/g%3E%3C/svg%3E");
   background-attachment: fixed;
   background-size: cover;
+  position: relative;
+
   .card-container {
-           
+    max-width: 95%;   
+    text-align: center;
+    @include respond(tab-land) {
+    margin: 1rem;
+    margin-right: 2rem;
+    }
+    @include respond(tab-port) {
+      display: block;
+    }
+    @include respond(phone) {
+      display: flex;
+      flex-direction: column; 
+    } 
   }
 }
