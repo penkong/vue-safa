@@ -7,7 +7,7 @@
 </template>
 
 <script>
-import BigCard from "../../components/BigCard";
+import BigCard from "../../components/BigCard/BigCard";
 export default {
   name: "UserLanding",
   components: {

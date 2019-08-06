@@ -1,13 +1,17 @@
 <template>
   <div class="contact-us">
-      <BigCard/>
+    <BigCard />
   </div>
 </template>
 
 <script>
-  export default {
-    name: "ContactUs"
+import BigCard from "../../components/BigCard/BigCard";
+export default {
+  name: "ContactUs",
+  componets: {
+    BigCard
   }
+};
 </script>
 
 
