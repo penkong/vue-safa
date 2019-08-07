@@ -17,33 +17,29 @@
         <router-link :to="{ name: 'Signup' }">Signup</router-link>
       </li>
       <li>
-        <router-link
-          :to="{ name: 'Login' }"
-          :isLoggedIn="isLoggedIn"
-          @loggedChange="onLoggedChagne"
-        >Login</router-link>
+        <router-link :to="{ name: 'Login' }" :isLoggedIn="isLoggedIn">Login</router-link>
       </li>
     </ul>
   </nav>
 </template>
 
 <script>
+import firebase from "firebase/app";
 export default {
   name: "Header",
+  props: ["isLoggedIn"],
   data() {
-    return {
-      isLoggedIn: false
-    };
+    return {};
   },
   methods: {
     logout() {
       this.isLoggedIn = !this.isLoggedIn;
-      // firebase
-      //   .auth()
-      //   .signOut()
-      //   .then(() => {
-      //     this.$router.push({ name: "Login" });
-      //   });
+      firebase
+        .auth()
+        .signOut()
+        .then(() => {
+          this.$router.push({ name: "Home" });
+        });
     }
   },
   onLoggedChange() {},

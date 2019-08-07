@@ -1,8 +1,8 @@
-import firebase from 'firebase';
+import firebase from 'firebase/app';
 import firestore from 'firebase/firestore';
 
 var firebaseConfig = {
-  apiKey: precess.env.VUE_APP_APIKEY,
+  apiKey: "AIzaSyBPqwWXHieBkzNdtkkp0OGAU9Vh2ASOx1A",
   authDomain: "vue-safa.firebaseapp.com",
   databaseURL: "https://vue-safa.firebaseio.com",
   projectId: "vue-safa",

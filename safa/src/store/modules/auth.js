@@ -1,10 +1,14 @@
 import qs from 'qs';
-import api from '../../api/imgur';
-import { router } from '../../main';
+import firebase from 'firebase/app';
+import db from '../../firebase/init';
+import router from '../../router';
 
 
 const state = {
-  token: window.localStorage.getItem('imgur_token')
+  username: '',
+  password: '',
+  email: '',
+  token: window.localStorage.getItem()
 };
 
 const getters = {
@@ -14,7 +18,24 @@ const getters = {
 //can make actions more complicate to make other 3 simple
 //setToken update token in state
 const actions = {
-  login: () => api.login(),
+  login: () => {
+    if (this.email && this.password) {
+      firebase
+        .auth()
+        .signInWithEmailAndPassword(this.email, this.password)
+        .then(cred => {
+          console.log(cred.user);
+          this.$router.push({ name: "UserLanding" });
+        })
+        .catch(err => {
+          this.feedback = err.message;
+        });
+      this.feedback = null;
+    } else {
+      this.feedback = "please fill both fields";
+    }
+    
+  },
   // first param in any action pass is obj that has some helpers tight to it 
   // window.location.hash come from authHandler.vue
   finalizeLogin: ({ commit }, hash) => {
