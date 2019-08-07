@@ -20,5 +20,4 @@ export default {
 <style scoped lang="scss">
 @import "../../sass/abstract/mixins";
 @import "../../sass/component/content";
-@import "About";
 </style>

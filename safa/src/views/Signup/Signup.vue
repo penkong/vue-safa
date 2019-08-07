@@ -1,5 +1,5 @@
 <template>
-  <div class="signup">
+  <div class="sign">
     <div class="card-log">
       <form @submit.prevent="signup">
         <div>
@@ -79,7 +79,7 @@ export default {
 
 <style scoped lang="scss">
 @import "../../sass/abstract/mixins";
-@import "Signup";
+@import "../../sass/component/sign";
 @import "../../sass/component/log-card";
 @import "../../sass/component/button";
 .btn {

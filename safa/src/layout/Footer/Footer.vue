@@ -1,6 +1,6 @@
 <template>
   <div class="footer">
-    <ul class="flex">
+    <ul>
       <li>
         <a href="#">Contact Us</a>
       </li>

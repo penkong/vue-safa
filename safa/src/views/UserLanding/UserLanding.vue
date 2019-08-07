@@ -19,5 +19,5 @@ export default {
 <style lang="scss" scoped>
 @import "../../sass/abstract/mixins";
 @import "../../sass/component/content";
-@import "UserLanding";
+
 </style>
