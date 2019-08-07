@@ -17,7 +17,11 @@
         <router-link :to="{ name: 'Signup' }">Signup</router-link>
       </li>
       <li>
-        <router-link :to="{ name: 'Login' }">Login</router-link>
+        <router-link
+          :to="{ name: 'Login' }"
+          :isLoggedIn="isLoggedIn"
+          @loggedChange="onLoggedChagne"
+        >Login</router-link>
       </li>
     </ul>
   </nav>
@@ -28,29 +32,32 @@ export default {
   name: "Header",
   data() {
     return {
-      isLoggedIn: true
+      isLoggedIn: false
     };
+  },
+  methods: {
+    logout() {
+      this.isLoggedIn = !this.isLoggedIn;
+      // firebase
+      //   .auth()
+      //   .signOut()
+      //   .then(() => {
+      //     this.$router.push({ name: "Login" });
+      //   });
+    }
+  },
+  onLoggedChange() {},
+  created() {
+    // let user = firebase.auth().currentUser;
+    this.isLoggedIn;
+    // firebase.auth().onAuthStateChanged(user => {
+    //   if (user) {
+    //     this.user = user;
+    //   } else {
+    //     this.user = null;
+    //   }
+    // });
   }
-  // methods: {
-  //   logout() {
-  //     firebase
-  //       .auth()
-  //       .signOut()
-  //       .then(() => {
-  //         this.$router.push({ name: "Login" });
-  //       });
-  //   }
-  // },
-  // created() {
-  //   // let user = firebase.auth().currentUser;
-  //   firebase.auth().onAuthStateChanged(user => {
-  //     if (user) {
-  //       this.user = user;
-  //     } else {
-  //       this.user = null;
-  //     }
-  //   });
-  // }
 };
 </script>
 

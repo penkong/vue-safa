@@ -17,8 +17,11 @@ export default new Router({
       path: "/about",
       name: "About",
       // this generates a separate chunk (about.[hash].js) for this route
+      meta: {
+        requireAuth: true
+      },
       component: () =>
-        import(/* webpackChunkName: "about" */ "./views/About/About.vue")
+        import(/* webpackChunkName: "about" */ "./views/About/About.vue"),
     },
     {
       path: "/login",
@@ -35,14 +38,18 @@ export default new Router({
     {
       path: "/userland",
       name: "UserLanding",
+      meta: {
+        requireAuth: true
+      },
       component: () =>
-        import(/* webpackChunkName: "about" */ "./views/UserLanding/UserLanding.vue")
+        import(/* webpackChunkName: "about" */ "./views/UserLanding/UserLanding.vue"),
     },
     {
       path: "/contact-us",
       name: "ContactUs",
       component: () =>
-        import(/* webpackChunkName: "about" */ "./views/ContactUs/ContactUs.vue")
+        import(/* webpackChunkName: "about" */ "./views/ContactUs/ContactUs.vue"),
+
     }
   ]
 });

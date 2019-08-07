@@ -24,8 +24,13 @@
 <script>
 export default {
   name: "Login",
+  props: ["isLoggedIn"],
   methods: {
-    login() {}
+    login() {
+      this.isLoggedIn = true;
+      this.$emit("loggedChange", e.target.value);
+      this.$router.push("/userland");
+    }
   }
 };
 </script>
