@@ -1,15 +1,23 @@
 <template>
   <nav class="header">
     <router-link :to="{ name: 'Home' }" class="safa type1">SAFA RAYANEH</router-link>
-    <ul>
+    <ul v-if="isLoggedIn">
+      <li>
+        <router-link :to="{ name: 'UserLanding' }">Our Projects</router-link>
+      </li>
+      <li>
+        <router-link :to="{ name: 'About' }">About</router-link>
+      </li>
+      <li>
+        <a class="item" @click="logout">logout</a>
+      </li>
+    </ul>
+    <ul v-else>
       <li>
         <router-link :to="{ name: 'Signup' }">Signup</router-link>
       </li>
       <li>
         <router-link :to="{ name: 'Login' }">Login</router-link>
-      </li>
-      <li>
-        <router-link :to="{ name: 'About' }">About</router-link>
       </li>
     </ul>
   </nav>
@@ -20,7 +28,7 @@ export default {
   name: "Header",
   data() {
     return {
-      user: null
+      isLoggedIn: true
     };
   }
   // methods: {

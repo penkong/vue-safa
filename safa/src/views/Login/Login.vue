@@ -12,7 +12,7 @@
           <!-- <p class="text-red-500 text-xs italic border-red-500">Please choose a password.</p> -->
         </div>
         <div class="btn-row">
-          <button class="btn btn-text btn--green" type="button">Sign In</button>
+          <button class="btn btn-text btn--green" type="button" @click="login">Sign In</button>
           <a href="#">Forgot Password?</a>
         </div>
       </form>
@@ -23,7 +23,10 @@
 
 <script>
 export default {
-  name: "Login"
+  name: "Login",
+  methods: {
+    login() {}
+  }
 };
 </script>
 

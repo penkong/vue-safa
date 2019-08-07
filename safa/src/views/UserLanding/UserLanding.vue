@@ -1,8 +1,8 @@
 <template>
-  <div class="user-landing">
-    <BigCard />
-    <BigCard />
-    <BigCard />
+  <div class="content">
+    <div v-for="item in 5" :key="item.id" class="free-fix">
+      <BigCard>{{ item }}</BigCard>
+    </div>
   </div>
 </template>
 
@@ -17,5 +17,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+@import "../../sass/abstract/mixins";
+@import "../../sass/component/content";
 @import "UserLanding";
 </style>

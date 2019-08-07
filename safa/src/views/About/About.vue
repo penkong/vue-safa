@@ -1,5 +1,5 @@
 <template>
-  <div class="about">
+  <div class="content">
     <div v-for="item in 5" :key="item.id" class="free-fix">
       <BigCard>{{ item }}</BigCard>
     </div>
@@ -19,5 +19,6 @@ export default {
 
 <style scoped lang="scss">
 @import "../../sass/abstract/mixins";
+@import "../../sass/component/content";
 @import "About";
 </style>
