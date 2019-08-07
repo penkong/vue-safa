@@ -5,7 +5,7 @@ import Home from "./views/Home/Home.vue";
 
 Vue.use(Router);
 
-export default new Router({
+const router =  new Router({
   mode: "history",
   base: process.env.BASE_URL,
   routes: [
@@ -54,3 +54,24 @@ export default new Router({
     }
   ]
 });
+
+// going to
+// come from
+// step next
+router.beforeEach((to, from, next) => {
+  if (to.matched.some(rec => rec.meta.requireAuth)) {
+    // check auth state of user
+    let user = firebase.auth().currentUser
+    if (user) {
+      next()
+    } else {
+      // redirect
+      next({ name: 'Home' })
+    }
+  } else {
+    // else it had not router guard.
+    next()
+  }
+})
+
+export default router;

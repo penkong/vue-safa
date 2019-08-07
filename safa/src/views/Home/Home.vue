@@ -1,6 +1,8 @@
 /* eslint-disable */
 <template>
   <div class="home">
+    <BigCard style="margin-top: 5.4rem;" />
+
     <div class="card-container">
       <Card />
       <Card />
@@ -15,11 +17,13 @@
 <script>
 // @ is an alias to /src
 import Card from "../../components/Card/Card";
+import BigCard from "../../components/BigCard/BigCard";
 
 export default {
   name: "Home",
   components: {
-    Card
+    Card,
+    BigCard
   }
 };
 </script>

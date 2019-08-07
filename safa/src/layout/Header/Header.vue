@@ -1,7 +1,7 @@
 <template>
   <nav class="header">
     <router-link :to="{ name: 'Home' }" class="safa type1">SAFA RAYANEH</router-link>
-    <ul v-if="isLoggedIn">
+    <ul v-if="user">
       <li>
         <router-link :to="{ name: 'UserLanding' }">Our Projects</router-link>
       </li>
@@ -17,7 +17,7 @@
         <router-link :to="{ name: 'Signup' }">Signup</router-link>
       </li>
       <li>
-        <router-link :to="{ name: 'Login' }" :isLoggedIn="isLoggedIn">Login</router-link>
+        <router-link :to="{ name: 'Login' }">Login</router-link>
       </li>
     </ul>
   </nav>
@@ -27,32 +27,30 @@
 import firebase from "firebase/app";
 export default {
   name: "Header",
-  props: ["isLoggedIn"],
   data() {
-    return {};
+    return {
+      user: null
+    };
   },
   methods: {
     logout() {
-      this.isLoggedIn = !this.isLoggedIn;
       firebase
         .auth()
         .signOut()
         .then(() => {
-          this.$router.push({ name: "Home" });
+          this.$router.push({ name: "Login" });
         });
     }
   },
-  onLoggedChange() {},
   created() {
-    // let user = firebase.auth().currentUser;
-    this.isLoggedIn;
-    // firebase.auth().onAuthStateChanged(user => {
-    //   if (user) {
-    //     this.user = user;
-    //   } else {
-    //     this.user = null;
-    //   }
-    // });
+    let user = firebase.auth().currentUser;
+    firebase.auth().onAuthStateChanged(user => {
+      if (user) {
+        this.user = user;
+      } else {
+        this.user = null;
+      }
+    });
   }
 };
 </script>

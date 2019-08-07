@@ -1,6 +1,7 @@
 {
   "name": "safa",
   "version": "0.1.0",
+  "author": "Nazemi <nazemi.works@gmail.com>",
   "private": true,
   "scripts": {
     "serve": "vue-cli-service serve",
