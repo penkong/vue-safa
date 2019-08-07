@@ -1,15 +1,12 @@
 // Variables
-$color: black;
-$body-color: #ecf0f1;
-$color1: #566473;
-$color2: rgb(2, 110, 160);
-$color3: #435a6b;
+@import '../abstract/variables';
+
 
 .header {
   position: fixed;
   height: 3.8rem;
   width: 100vw;
-  background-color: #efefef;
+  background-color: $color-bg-header;
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -26,22 +23,12 @@ $color3: #435a6b;
     font-size: 1.6rem;
     font-weight: 300;
     letter-spacing: .2rem;
-    color: rgb(0, 65, 95);
+    color: $color-safa;
     transition: all 0.5s ease-in;
     cursor: pointer;
     outline: none;
-    // margin: 1em 0.8em;
     padding: 0.2rem 1.2rem;
-    // @include respond(phone) {
-    //   &.type1 {
-    //     &.type1::after,
-    //     &.type1::before{
-    //       display: block;
-    //       border: 1.3px solid;
-    //       border-radius: 3px;
-    //     }
-    //   }
-    // }
+    
     &.type1 {
       // Effect one
       &.type1::after,
@@ -50,9 +37,9 @@ $color3: #435a6b;
         display: block;
         position: absolute;
         width: 5%;
-        background-color: $color2;
-        height: 10%;
-        border: 1.3px solid $color2;
+        background-color: $color-logo;
+        height: 5%;
+        border: 1.3px solid $color-logo;
         transition: all 0.8s ease;
         border-radius: 3px;
       }
@@ -63,8 +50,8 @@ $color3: #435a6b;
       right: 0;
       border-top-color: transparent;
       border-left-color: transparent;
-      border-bottom-color: $color1;
-      border-right-color: $color1;
+      // border-bottom-color: red;
+      // border-right-color: red;
 
     }
 
@@ -73,8 +60,8 @@ $color3: #435a6b;
       left: 0;
       border-bottom-color: transparent;
       border-right-color: transparent;
-      border-top-color: $color1;
-      border-left-color: $color1;
+      // border-top-color: red;
+      // border-left-color: red;
 
     }
 
@@ -86,8 +73,8 @@ $color3: #435a6b;
     }
 
     &:hover {
-      color: white;
-      background-color: rgb(2, 110, 160);
+      color: $color-hover-font;
+      background-color: $color-logo;
     }
     
   }
@@ -103,8 +90,8 @@ $color3: #435a6b;
       padding: .5rem .8rem;
       transition: all .2s ease-in;
       &:hover {
-        color: white;
-        background: rgb(3, 127, 184);
+        color: $color-hover-font;
+        background: $color-bg-link;
       }
     }
 
@@ -117,8 +104,8 @@ $color3: #435a6b;
         padding: .2rem .3rem;
         transition: all .2s ease-in;
         &:hover {
-          color: white;
-          background: rgb(3, 127, 184);
+          color: $color-hover-font;
+          background: $color-bg-link;
         }
       }
     }
