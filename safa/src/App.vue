@@ -8,7 +8,7 @@
 <script>
 import Header from "./layout/Header/Header";
 import Footer from "./layout/Footer/Footer";
-import db from "./firebase/init";
+import db from "./api/firebase/init";
 export default {
   name: "App",
   data() {

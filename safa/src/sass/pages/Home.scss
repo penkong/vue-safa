@@ -15,17 +15,20 @@
     max-width: 95%;
     margin-left: 2rem;    
     text-align: center;
+
     @include respond(tab-land) {
-    margin: 1rem;
-    margin-right: 2rem;
-    min-height: 100vh;
-    height: auto;
-  }
-  @include respond(tab-port) {
-    display: block;
-    min-height: 100vh;
-    height: auto;
+      margin: 1rem;
+      margin-right: 2rem;
+      min-height: 100vh;
+      height: auto;
     }
+
+    @include respond(tab-port) {
+      display: block;
+      min-height: 100vh;
+      height: auto;
+    }
+    
     @include respond(phone) {
       display: flex;
       flex-direction: column; 

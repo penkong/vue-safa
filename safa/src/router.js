@@ -1,6 +1,6 @@
 import Vue from "vue";
 import Router from "vue-router";
-import firebase from 'firebase';
+import firebase from 'firebase/app';
 import Home from "./views/Home/Home.vue";
 
 Vue.use(Router);
@@ -15,7 +15,7 @@ const router =  new Router({
       component: Home
     },
     {
-      path: "/about",
+      path: "/aboutforCustomer",
       name: "About",
       // this generates a separate chunk (about.[hash].js) for this route
       meta: {
@@ -46,11 +46,10 @@ const router =  new Router({
         import(/* webpackChunkName: "about" */ "./views/UserLanding/UserLanding.vue"),
     },
     {
-      path: "/contact-us",
+      path: "/contactus",
       name: "ContactUs",
       component: () =>
-        import(/* webpackChunkName: "about" */ "./views/ContactUs/ContactUs.vue"),
-
+        import(/* webpackChunkName: "about" */ "./views/ContactUs/ContactUs.vue")
     }
   ]
 });

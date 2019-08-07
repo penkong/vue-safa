@@ -1,6 +1,8 @@
 <template>
-  <div class="contact-us">
-    <BigCard />
+  <div class="content">
+    <div class="free-fix">
+      <BigCard>1</BigCard>
+    </div>
   </div>
 </template>
 
@@ -8,7 +10,7 @@
 import BigCard from "../../components/BigCard/BigCard";
 export default {
   name: "ContactUs",
-  componets: {
+  components: {
     BigCard
   }
 };
@@ -16,4 +18,6 @@ export default {
 
 
 <style scoped lang="scss">
+@import "../../sass/abstract/mixins";
+@import "../../sass/component/content";
 </style>

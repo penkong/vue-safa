@@ -2,7 +2,6 @@
 <template>
   <div class="home">
     <BigCard style="margin-top: 5.4rem;" />
-
     <div class="card-container">
       <Card />
       <Card />
@@ -30,5 +29,5 @@ export default {
 
 <style scoped lang="scss">
 @import "../../sass/abstract/mixins";
-@import "Home";
+@import "../../sass/pages/Home";
 </style>

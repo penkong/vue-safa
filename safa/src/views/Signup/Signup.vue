@@ -4,7 +4,7 @@
       <form @submit.prevent="signup">
         <div>
           <label for="email">Email</label>
-          <input v-model="email" id="email" type="text" placeholder="email"  />
+          <input v-model="email" id="email" type="text" placeholder="email" />
           <p v-if="email">Please choose a email.</p>
         </div>
         <div>
@@ -25,16 +25,16 @@
 <script>
 // @ is an alias to /src
 import firebase from "firebase/app";
-import db from "../../firebase/init";
+import db from "../../api/firebase/init";
 
 export default {
   name: "Signup",
   components: {},
   data() {
     return {
-      email: '',
-      password: '',
-      feedback: ''
+      email: "",
+      password: "",
+      feedback: ""
     };
   },
   methods: {
