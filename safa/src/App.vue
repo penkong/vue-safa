@@ -13,7 +13,7 @@ export default {
   name: "App",
   data() {
     return {
-      isLoggedIn: false
+      isLoggedIn: null
     };
   },
   components: {
@@ -21,11 +21,11 @@ export default {
     Footer
   },
   created() {
-    db.collection("users")
-      .get()
-      .then(snapshot => {
-        snapshot.forEach(user => console.log(user));
-      });
+    // db.collection("users")
+    //   .get()
+    //   .then(snapshot => {
+    //     snapshot.forEach(user => console.log(user));
+    //   });
   }
 };
 </script>

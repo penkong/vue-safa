@@ -3,8 +3,8 @@
     <div class="card-log">
       <form @submit.prevent="login">
         <div>
-          <label for="username">Username</label>
-          <input type="text" v-model="username" placeholder="Username" />
+          <label for="email">Email</label>
+          <input type="text" v-model="email" placeholder="email" />
         </div>
         <div>
           <label for="password">Password</label>
@@ -27,9 +27,9 @@ export default {
   props: ["isLoggedIn"],
   data() {
     return {
-      username: "",
-      password: "",
-      feedback: false
+      email: null,
+      password: null,
+      feedback: null
     };
   },
   methods: {
